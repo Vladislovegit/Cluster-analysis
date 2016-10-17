@@ -1,4 +1,4 @@
-package dip;
+package models;
 
 public class Zone {
     public Integer id;
@@ -22,9 +22,9 @@ public class Zone {
     }
 
     public Double getRange(Coordinates<Double, Double, Integer, Integer> clusterMeans) {
-        return Math.sqrt(Math.pow(0.3 *(clusterMeans.getFirst() - compact), 2) +
-                Math.pow(1 * (clusterMeans.getSecond() - elongation), 2) +
-                Math.pow(0.5 * (clusterMeans.getThird() - square), 2) +
-                Math.pow(1 * (clusterMeans.getFourth() - perimeter), 2));
+        return Math.sqrt(Math.pow((clusterMeans.getFirst() - compact), 2) +
+                Math.pow((clusterMeans.getSecond() - elongation), 2) +
+                Math.pow((clusterMeans.getThird() - square), 2) +
+                Math.pow((clusterMeans.getFourth() - perimeter), 2));
     }
 }

@@ -1,4 +1,4 @@
-package dip;
+package models;
 
 public class Coordinates<K, V, C, D> {
 

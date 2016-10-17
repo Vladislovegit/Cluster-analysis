@@ -1,9 +1,8 @@
-package dip;
+package models;
 
 public class MyPair <K, V> {
     private K first;
     private V second;
-
 
     public MyPair(K key, V value) {
         first = key;
@@ -19,7 +18,6 @@ public class MyPair <K, V> {
     }
 
     public K getFirst() {
-
         return first;
     }
 
